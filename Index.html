@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade prática de Fundamentos de desenvolvimento de Software</title>
+  <style>
+    /* 1. Fundo da página */
+    body { background-color: #e6f2ff; margin: 0; font-family: Arial, sans-serif; }
+    /* 2. Título principal centralizado e cor diferente */
+    h1 { text-align: center; color: #2c3e50; margin-top: 20px; }
+    /* 3. Parágrafo com fonte maior e justificado */
+    p { font-size: 1.2rem; text-align: justify; margin: 20px; line-height: 1.5; }
+    /* 4. Lista com espaçamento maior entre itens */
+    ul { list-style-type: disc; margin: 20px; padding-left: 40px; }
+    ul li { margin-bottom: 10px; }
+    /* 5. Imagem com bordas arredondadas e tamanho adequado */
+    img { display: block; max-width: 100%; height: auto; border-radius: 10px; margin: 20px auto; }
+    /* 6. Estilização da tabela */
+    table { width: 80%; margin: 20px auto; border-collapse: collapse; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    table td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+    /* 7. Link com efeito hover */
+    a { color: #2980b9; text-decoration: none; transition: color 0.3s; }
+    a:hover { color: #e74c3c; }
+    /* Estilização do botão */
+    button { display: block; margin: 20px auto; padding: 10px 20px; font-size: 1rem; cursor: pointer; border: none; border-radius: 5px; background-color: #2980b9; color: white; transition: background-color 0.3s; }
+    button:hover { background-color: #1c5980; }
+  </style>
+</head>
+<body>
+  <!-- 1. Título principal -->
+  <h1>Matheus Albuquerque</h1>
+
+  <!-- 2. Parágrafo de autobiografia -->
+  <p>Olá! Meu nome é Matheus Albuquerque, tenho 22 anos, moro em Santa Rosa, RS. Me interesso por programação, jogos e ativida física.</p>
+
+  <!-- 3. Lista de hobbies -->
+  <ul>
+    <li>Programação</li>
+    <li>Jogos</li>
+    <li>Treinar</li>
+  </ul>
+
+  <!-- 4. Imagem representando um hobby -->
+  <img src="Treino.jpg" alt="Treinando" width="300">
+
+  <!-- 5. Tabela de países que gostaria de visitar -->
+  <table>
+    <tr>
+      <td>Irlanda</td>
+      <td><img src="Irladna.png" alt="Irlanda" width="100"></td>
+    </tr>
+    <tr>
+      <td>Canadá</td>
+      <td><img src="Canadá.png" alt="Canadá" width="100"></td>
+    </tr>
+    <tr>
+      <td>Rússia</td>
+      <td><img src="Rússia.png" alt="Rússia" width="100"></td>
+    </tr>
+  </table>
+
+  <!-- 6. Link para site de interesse -->
+  <p>Visite o site <a href="https://thenewscc.beehiiv.com" target="_blank" rel="noopener noreferrer">The News</a> para acompanhar as notícias da atualidade.</p>
+
+  <!-- Botão para interação -->
+  <button id="msgButton">Clique para ver uma mensagem!</button>
+  <div id="message" style="text-align:center;"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const button = document.querySelector('#msgButton');
+      const messageDiv = document.querySelector('#message');
+      button.addEventListener('click', () => {
+        messageDiv.textContent = 'Olá! Que seu dia seja repleto de código e criatividade!';
+      });
+    });
+  </script>
+</body>
+</html>
